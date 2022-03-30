@@ -10,7 +10,7 @@ Below shows the output after running the R scripts for the linear regression and
 
 ![Linear Regression output](https://github.com/kmaluccio/MechaCar_Statistical_Analysis/blob/main/multLinReg.png)
 
-![Summary Statistics](https://github.com/kmaluccio/MechaCar_Statistical_Analylsis/blob/main/summaryStats.png)
+![Summary Statistics](https://github.com/kmaluccio/MechaCar_Statistical_Analysis/blob/main/summaryStats.png)
 
 ## Summary Statistics on Suspension Coils
 
