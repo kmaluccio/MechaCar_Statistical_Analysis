@@ -17,3 +17,16 @@ The above shows the summary statistics calculated in R based on the linear regre
 
 ## Summary Statistics on Suspension Coils
 
+We have calculated the mean, median, variance, and standard deviation of the PSI for all vehicles at MechaCar. Then, we were able to break up these values by the three lots to find that the mean and median in lots 1 and 2 are similar with a smaller variance as opposed to lot 3 which has a large variance with similar mean and median. Below is a screenshot of the total summary and the lot summary statistics that were calculated in R.
+
+![Total Summary Stats](https://github.com/kmaluccio/MechaCar_Statistical_Analysis/blob/main/total_summary.png)
+
+We can see the above showing the statistics for all cars in every lot at MechaCar and the table below breaks it down by lot.
+
+![Total and Lot Summary Stats](https://github.com/kmaluccio/MechaCar_Statistical_Analysis/blob/main/lot_summary.png)
+
+Based on our findings and the design specifications for the MechaCar suspension coils (which dictates that the variance cannot exceed 100 pounds per square inch), we have found that the current manufacturing data mostly meets this specification. In general or overall, for all cars in every lot, the variance is around 62 pounds per square inch which meets the requirements. Looking at each individual lot, lots 1 and 2 also satisfy the specification with a variance of around 1 and 7, respectively. Unfortunately, lot 3 does not meet this design specification because the variance of the suspension coils is 170 which is greater than 100. 
+
+## T-Tests on Suspension Coils
+
+Interpret findings for the t-test results here and put a screenshot of the output from running the R script.

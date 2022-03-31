@@ -16,6 +16,6 @@ summary(mechaLinReg)
 suspension_table <- read.csv('Suspension_Coil.csv', check.names = F, stringsAsFactors = F)
 # create summaries for the table data
 total_summary <- suspension_table %>% summarize(Mean_PSI=mean(PSI), Median_PSI=median(PSI), Variance=var(PSI), SD=sd(PSI), .groups = 'keep')
-print(total_summary)
+total_summary
 lot_summary <- suspension_table %>% group_by(Manufacturing_Lot) %>% summarize(Mean_PSI=mean(PSI), Median_PSI=median(PSI), Variance=var(PSI), SD=sd(PSI), .groups = 'keep')
-print(lot_summary) # need to adjust to print the decimals here
+lot_summary 
