@@ -21,15 +21,14 @@ lot_summary <- suspension_table %>% group_by(Manufacturing_Lot) %>% summarize(Me
 lot_summary 
 
 # t-test to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1500 pounds per square inch
-t.test(lot_summary$Mean_PSI,mu=1500) #not sure which t tests are correct
-t.test(lot_summary$Mean_PSI)
 t.test(suspension_table$PSI,mu=1500)
 
-# write three more t tests using subset() to see if PSI for each lot is statistically different from the population mean
-lot1 <- subset(lot_summary, Manufacturing_Lot == 'Lot1')
-lot2 <- subset(lot_summary, Manufacturing_Lot == 'Lot2')
-lot3 <- subset(lot_summary, Manufacturing_Lot == 'Lot3')
-t.test(suspension_table$PSI,mu=lot1$Mean_PSI)
-t.test(suspension_table$PSI,mu=lot2$Mean_PSI)
-t.test(suspension_table$PSI,mu=lot3$Mean_PSI)
+# t-tests using subset() for each lot to see if PSI is statistically different from the population mean by lot
+lot1 <- subset(suspension_table, Manufacturing_Lot == 'Lot1')
+t.test(lot1$PSI,mu=1500) # t-test for lot 1
 
+lot2 <- subset(suspension_table, Manufacturing_Lot == 'Lot2')
+t.test(lot2$PSI,mu=1500) # t-test for lot 2
+
+lot3 <- subset(suspension_table, Manufacturing_Lot == 'Lot3')
+t.test(lot3$PSI,mu=1500) # t-test for lot 3
