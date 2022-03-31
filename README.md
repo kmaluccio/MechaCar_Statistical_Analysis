@@ -30,3 +30,9 @@ Based on our findings and the design specifications for the MechaCar suspension 
 ## T-Tests on Suspension Coils
 
 Interpret findings for the t-test results here and put a screenshot of the output from running the R script.
+
+## Study Design: MechaCar vs Competition
+
+description of statistical study that can quantify how the MechaCar performs against competition
+
+- address questions: what metrics are you going to test? what is the null hypothesis or alternative hypothesis? what statistical test would you use to test the hypothesis? what data is needed to run the statistical test?
