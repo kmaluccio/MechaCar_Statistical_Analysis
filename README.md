@@ -52,8 +52,10 @@ Finally, we find the p-value for lot 3 to be 0.0417 which is less than 0.05. Thi
 To perform a statistical study comparing MechaCar performance to vehicle performance of other manufacturers.
 
 - questions: what metrics are you going to test? what is the null hypothesis or alternative hypothesis? what statistical test would you use to test the hypothesis? what data is needed to run the statistical test?
-- Metrics: we want to test city and highway fuel efficiencies
-- Null hypothesis: all of the cars of the same class have the same fuel efficiencies
-- Alternative hypothesis: not all of the cars have the same fuel efficiencies
-- use ANOVA test and ggplot to complete the analysis for both types of fuel efficiencies and create a visualization to show the results of different cars
-- to run the test, we would need to collect fuel efficiency data from cars of all class types; for example, we could collect 100 samples for each car type so for n classes we would get 100n data points to use in our testing
+- Metrics: we want to test city or highway fuel efficiencies since this plays an important role in the consumer's decision to select the MechaCar over their competition and cost is another important metric
+	- Note: If cost is slightly higher for the MechaCar, this should not rule it out against their competition because they may have better fuel efficiency which allows for long term savings on gas etc. Additionally, it is important to consider the maintenance costs for each vehicle since this could add to the overall cost
+- Null hypothesis: all cars of the same class as MechaCar have the same fuel efficiencies and the same cost
+- Alternative hypothesis: not all MechaCars and competitor cars have the same fuel efficiencies and they do not all cost the same
+- use ANOVA test to complete the analysis for both types of fuel efficiencies and analyze the difference (if any) in cost of each type of car (MechaCar and competitors); then use ggplot to create visualizations of the results
+- to run the test, we would need to collect fuel efficiency data from cars of all class types as well as the cost(s) of the cars; for example, we could collect 100 samples for each car type so for n classes we would get 100n data points to use in our testing
+- with the data we collect, we can write script in R to test the data and run summary statistics similar to what we did in this project using the MechaCar data and suspension coil data with measures of PSI
